@@ -6,5 +6,5 @@ add_library(MedianDS STATIC src/MedianGetter.cpp src/MedianGetter.h)
 add_executable(SimpleApp src/SimpleApp.cpp)
 target_link_libraries(SimpleApp MedianDS)
 
-add_executable(MedianTest test/medianTest.cpp)
+add_executable(MedianTest tests/medianTest.cpp)
 target_link_libraries(MedianTest MedianDS)
