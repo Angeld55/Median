@@ -32,7 +32,7 @@ but could be easly modified for the second definition.
 */
 int MedianGetter::getMedian() const
 {
-	if (left.empty() && right.empty())
+	if (left.empty())
 		throw std::logic_error("empty collection!");
 	return left.top();
 }
