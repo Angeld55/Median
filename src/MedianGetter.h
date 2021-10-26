@@ -13,7 +13,7 @@ class MedianGetter
 	void handleHeapsSizes();
 public:
 	MedianGetter() = default;
-	MedianGetter(std::initializer_list<int> ilist);
+	MedianGetter(std::initializer_list<int>);
 
 	void insert(int);
 	int getMedian() const; //for a set of even numbers - gives the left of the two middle values.
