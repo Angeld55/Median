@@ -16,5 +16,5 @@ public:
 	MedianGetter(std::initializer_list<int>);
 
 	void insert(int);
-	int getMedian() const; //for a set of even numbers - gives the left of the two middle values.
+	double getMedian() const;
 };
