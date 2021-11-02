@@ -21,15 +21,6 @@ void MedianGetter::insert(int n)
 	}
 }
 
-/*
-Set of an even number has no distinct middle value 
-and the median is usually defined the left of two middle value.
-
-Other definition: the arithmetic mean of the two middle values.
-
-The current implemented structure gives the median by the first definition,
-but could be easly modified for the second definition.
-*/
 double MedianGetter::getMedian() const
 {
 	if (left.empty())
