@@ -159,7 +159,7 @@ TEST_CASE(medianGetter_stream_decreasing)
         ASSERT(cmp(2, m.getMedian()));
 
         m.insert(-2);
-        ASSERT(cmp(2.5, m.getMedian()));
+        ASSERT(cmp(1.5, m.getMedian()));
         return true;
 }
 
