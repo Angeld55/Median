@@ -30,11 +30,11 @@ Other definition: the arithmetic mean of the two middle values.
 The current implemented structure gives the median by the first definition,
 but could be easly modified for the second definition.
 */
-int MedianGetter::getMedian() const
+double MedianGetter::getMedian() const
 {
 	if (left.empty())
 		throw std::logic_error("empty collection!");
-	return left.top();
+	return left.size() == right.size() ? (left.top() + right.top())/2.0 : left.top();
 }
 
 void MedianGetter::handleHeapsSizes()
