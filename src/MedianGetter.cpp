@@ -41,3 +41,8 @@ void MedianGetter::handleHeapsSizes()
 		right.pop();
 	}
 }
+
+bool MedianGetter::isEmpty() const
+{
+	return laft.size() == 0 && right.size() == 0;
+}
