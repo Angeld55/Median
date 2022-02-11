@@ -17,4 +17,5 @@ public:
 
 	void insert(int);
 	double getMedian() const;
+	bool isEmpty() const;
 };
